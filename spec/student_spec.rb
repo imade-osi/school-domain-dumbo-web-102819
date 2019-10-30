@@ -55,7 +55,7 @@ describe 'School' do
       @school.add_student("Jack Bauer", 7)
 
       # key order does not matter; this is testing that the students in each respective value are in alphabetical order
-      expect(@school.sort).to eq({7 => ["Blake Johnson", "Jack Bauer"], 9 => ["Bart Simpson", "Homer Simpson"], 10 => ["Avi Flombaum", "Jeff Baird"]})
+      expect(@school.sort).to eq({7 => ["Blake Johnson", "Jack Bauer"], 9 => ["Homer Simpson","Bart Simpson"], 10 => ["Avi Flombaum", "Jeff Baird"]})
     end
   end
 end
